@@ -10,7 +10,10 @@ int main() {
   printf("Please insert the height\n");
   scanf("%d", &height);
 
-  printf("Please insert the width\n");
+  while (height <= 0) {
+    printf("Please insert a valid height\n");
+    scanf("%d", &height);
+  }
   scanf("%d", &width);
 
   printf("Please insert the length\n");
